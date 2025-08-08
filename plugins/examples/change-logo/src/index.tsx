@@ -74,11 +74,24 @@ export function ReactiveLogo(props: AppLogoProps) {
   }
 }
 
-const show = 'simple';
+const show = 'text';
 if (show === 'simple') {
   registerAppLogo(SimpleLogo);
 } else if (show === 'text') {
-  registerAppLogo(<p>My Logo</p>);
+  registerAppLogo(
+  <p
+    style={{
+      fontFamily: 'Roboto, sans-serif',
+      fontWeight: 500,
+      fontSize: '1.25rem',
+      margin: 0,
+      padding: 0,
+      color: 'inherit',
+    }}
+  >
+    KubeMaster
+  </p>
+);
 } else {
   registerAppLogo(ReactiveLogo);
 }
