@@ -89,7 +89,7 @@ if (show === 'simple') {
       color: 'inherit',
     }}
   >
-    KubeMaster
+    Kubernetes
   </p>
 );
 } else {
